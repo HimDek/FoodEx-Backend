@@ -160,7 +160,7 @@ class GetEmailOTP(views.APIView):
             },
         )
         sent = send_mail(
-            subject="Email OTP for Maaco",
+            subject="Email OTP for FoodEx",
             message=strip_tags(html_message),
             from_email=None,
             recipient_list=[email.email],
